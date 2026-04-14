@@ -118,13 +118,27 @@
       line-height: 1.0;
       font-weight: 400;
       letter-spacing: -0.01em;
-      opacity: 0;
-      animation: fadeUp 0.7s ease 0.4s forwards;
     }
 
     .hero-name em {
       font-style: italic;
       color: var(--accent);
+    }
+
+    .hero-header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.4s forwards;
+    }
+
+    .hero-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
     }
 
     .hero-tagline {
@@ -454,8 +468,11 @@
 
   <!-- HERO -->
   <section id="hero" style="position:relative;">
-    <p class="hero-eyebrow">Frontend Developer </p>
-    <h1 class="hero-name">Krishna<br><em>Sahu</em></h1>
+    <p class="hero-eyebrow">Software Developer </p>
+    <div class="hero-header">
+      <h1 class="hero-name">Krishna<br><em>Sahu</em></h1>
+      <img src="ce04a70753441772e6faaa5cf58b7d47.png" alt="Krishna Sahu" class="hero-photo">
+    </div>
     <p class="hero-tagline">I am a web developer and learning data structure and algorithm</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Work</a>
